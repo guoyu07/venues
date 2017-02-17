@@ -16,13 +16,16 @@ and signing up at https://foursquare.com/developers/apps.
 
 ## Checking the results
 Once started locally, the service can be checked using below url
-http://localhost:8080/venues/doesNotExist --> returns
+http://localhost:8080/venues/doesNotExist 
+```json
 {
   "responseCode": 400,
   "responseMessage": "Couldn't geocode param near: doesNotExist"
 }
+```
 
-http://localhost:8080/venues/shepherd's%20bush --> returns
+http://localhost:8080/venues/shepherd's%20bush 
+```json
 {
   "responseCode": 200,
   "venueList": [
@@ -40,3 +43,4 @@ http://localhost:8080/venues/shepherd's%20bush --> returns
       .
       }
   ]   
+```
